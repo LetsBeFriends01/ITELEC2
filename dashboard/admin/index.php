@@ -17,9 +17,12 @@ $user_data = $stmt->fetch(PDO::FETCH_ASSOC);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="stylesheet" href="../../src/css/dashboard.css">
+    <link rel="stylesheet" href="../../src/css/main.css">
 </head>
 <body>
-    <h1>Welcome <?php echo $user_data['username'] ?></h1>
-    <button><a href="authentication/admin-class.php?admin_signout" >Sign Out</a></button>
+    <div class="center"><h1 class="welcome">Welcome To IT ELEC 2!, <span> <?php echo $user_data['username'] ?></span></h1>
+    <button><a href="authentication/admin-class.php?admin_signout" >Sign Out</a></button></div>
+   
 </body>
-</html>  
+</html>     
