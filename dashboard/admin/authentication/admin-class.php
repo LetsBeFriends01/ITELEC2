@@ -25,7 +25,7 @@ class ADMIN {
             exit;
         }
 
-        unset($_SESSION['csrf_token']);
+        // unset($_SESSION['csrf_token']);
 
         $hash_password = md5($password);
         echo `<script>alert('admin Added Successfully'); window.location.href = '../../../';</script>`;
@@ -38,7 +38,9 @@ class ADMIN {
         ));
 
         if($exec) {
-            echo "<script>alert('admin Added Successfully'); window.location.href = '../../../';</script>";
+            echo "<script>alert('admin Added Successfully'); </script>";
+            // echo "<script>alert('admin Added Successfully'); window.location.href = '../../../';</script>";
+            $this->adminSignIn($email, $password, $csrf_token);
             exit;
         } else {
              echo "<script>alert('adding admin failed'); window.location.href = '../../../';</script>";
@@ -92,8 +94,8 @@ class ADMIN {
             return true;
             exit;
         } else {
-            return false;
             $this->redir();
+            return false;
         }
     }  
 

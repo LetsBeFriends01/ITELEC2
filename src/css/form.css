@@ -1,6 +1,6 @@
 .center {
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
   gap: 1.6rem;
 }
 
@@ -67,4 +67,9 @@ span {
 .toggle {
   color: rgb(219, 170, 9);
   cursor: pointer;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
 }

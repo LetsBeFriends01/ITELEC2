@@ -11,10 +11,11 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="src/css/main.css">
     <link rel="stylesheet" href="src/css/form.css">
+    <link rel="shortcut icon" href="src/images/favicon.ico" type="image/x-icon">
 </head>
 <body >
+    <div class="container">
     <div class="center">
-        
         <div class="form-wrapper login">
             <h2>Sign In</h2>
             <form action="dashboard/admin/authentication/admin-class.php" method="POST">
@@ -36,7 +37,7 @@
             </form>
         </div>
         <span><p class="toggle-desc">Don't have a account yet? </p><p class="toggle" onclick="toggleForm()">Sign up</p</span>
-    </div>
+    </div></div>
     <script src="src/js/main.js"></script>
 </body>
 </html>
